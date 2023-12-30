@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'pred5'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A49042A9899451BB52955D9D8A45080 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_88AEB695B1954B438F94ECC265156443 }}
