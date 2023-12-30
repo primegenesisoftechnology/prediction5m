@@ -1,12 +1,11 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO
 import threading
-import time
 import websocket
 import json
 import joblib
 import numpy as np
-import gzip
+
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 kline_data_5m=None
