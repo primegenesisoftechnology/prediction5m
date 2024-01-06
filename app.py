@@ -15,7 +15,7 @@ data=None
 model_5m = joblib.load('Model_5m.joblib')
 def get_nearest_multiple_of_3():
     current_minute = datetime.utcnow().minute
-    nearest_multiple = (current_minute // 3) * 3
+    nearest_multiple = (current_minute // 5) * 5
     return nearest_multiple
 
 def utc_countdown_nearest_multiple_of_3(duration_minutes=5):
