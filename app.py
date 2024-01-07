@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 kline_data_5m = None
 data=None
-model_5m = joblib.load('Model_5m.joblib')
+model_5m = joblib.load('Model_5m_lgbm.joblib')
 def get_nearest_multiple_of_3():
     current_minute = datetime.utcnow().minute
     nearest_multiple = (current_minute // 5) * 5
